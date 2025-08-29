@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Coding - Exerc&#237;cio2 - Igor Barbosa - 29.08.25"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-29 07:38:12 "/>
+        <attribute name="created" value="QWx1bm87TTU3MDY1OzIwMjUtMDgtMjk7IjA3OjIxOjU2ICI7MjA1NQ=="/>
+        <attribute name="edited" value="QWx1bm87TTU3MDY1OzIwMjUtMDgtMjk7IjA3OjM4OjEyICI7MTsyMTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, soma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva um n&#250;mero:  &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Escreva outro n&#250;mero: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Escreva o &#250;ltimo n&#250;mero:  &quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="soma" expression="n1 + n2 + n3"/>
+            <output expression="&quot;A soma &#233;:  &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
