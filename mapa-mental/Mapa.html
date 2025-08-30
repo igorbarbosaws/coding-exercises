@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x1f40d; Mapa Mental - Comandos Python","children":[{"content":"&#x1f4cc; Vari&#xe1;veis e Tipos","children":[{"content":"<code>x = 10</code> &#x2192; atribui&#xe7;&#xe3;o de valor","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<code>type()</code> &#x2192; retorna o tipo da vari&#xe1;vel","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<code>int()</code>, <code>float()</code>, <code>str()</code> &#x2192; convers&#xe3;o de tipos","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"<code>bool()</code> &#x2192; converte para booleano","children":[],"payload":{"tag":"li","lines":"6,8"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x1f4e5; Entrada e Sa&#xed;da","children":[{"content":"<code>print()</code> &#x2192; exibe sa&#xed;da","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"<code>input()</code> &#x2192; recebe entrada do usu&#xe1;rio","children":[],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"&#x1f500; Controle de Fluxo","children":[{"content":"<code>if / elif / else</code> &#x2192; estruturas condicionais","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<code>for</code> &#x2192; loop em sequ&#xea;ncia","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<code>while</code> &#x2192; loop condicional","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"<code>break</code> &#x2192; interrompe loop","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<code>continue</code> &#x2192; pula para pr&#xf3;xima itera&#xe7;&#xe3;o","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"&#x1f6e0;&#xfe0f; Fun&#xe7;&#xf5;es","children":[{"content":"<code>def</code> &#x2192; define fun&#xe7;&#xe3;o","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"<code>lambda</code> &#x2192; fun&#xe7;&#xe3;o an&#xf4;nima","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<code>return</code> &#x2192; retorna valor","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h2","lines":"25,26"}},{"content":"&#x1f4da; Estruturas de Dados","children":[{"content":"<code>list</code> &#x2192; lista mut&#xe1;vel","children":[{"content":"<code>append()</code>, <code>remove()</code>, <code>pop()</code>","children":[],"payload":{"tag":"li","lines":"34,35"}}],"payload":{"tag":"li","lines":"33,35"}},{"content":"<code>tuple</code> &#x2192; tupla imut&#xe1;vel","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"<code>set</code> &#x2192; conjunto sem repeti&#xe7;&#xe3;o","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"<code>dict</code> &#x2192; dicion&#xe1;rio chave-valor","children":[{"content":"<code>keys()</code>, <code>values()</code>","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"37,40"}}],"payload":{"tag":"h2","lines":"32,33"}},{"content":"&#x2797; Operadores","children":[{"content":"Aritm&#xe9;ticos: <code>+ - * / % // **</code>","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"Compara&#xe7;&#xe3;o: <code>== != &gt; &lt; &gt;= &lt;=</code>","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"L&#xf3;gicos: <code>and or not</code>","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Pertin&#xea;ncia: <code>in / not in</code>","children":[],"payload":{"tag":"li","lines":"46,48"}}],"payload":{"tag":"h2","lines":"42,43"}},{"content":"&#x1f4e6; M&#xf3;dulos e Pacotes","children":[{"content":"<code>import</code> &#x2192; importa biblioteca","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"<code>from ... import ...</code> &#x2192; importa parte do m&#xf3;dulo","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"<code>as</code> &#x2192; apelido para m&#xf3;dulo","children":[],"payload":{"tag":"li","lines":"53,55"}}],"payload":{"tag":"h2","lines":"50,51"}},{"content":"&#x26a0;&#xfe0f; Tratamento de Erros","children":[{"content":"<code>try / except</code> &#x2192; captura exce&#xe7;&#xe3;o","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"<code>finally</code> &#x2192; sempre executa","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"<code>raise</code> &#x2192; lan&#xe7;a exce&#xe7;&#xe3;o","children":[],"payload":{"tag":"li","lines":"60,62"}}],"payload":{"tag":"h2","lines":"57,58"}},{"content":"&#x1f4c2; Manipula&#xe7;&#xe3;o de Arquivos","children":[{"content":"<code>open()</code> &#x2192; abre arquivo","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"<code>read()</code> &#x2192; l&#xea; conte&#xfa;do","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"<code>write()</code> &#x2192; escreve no arquivo","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"<code>with open()</code> &#x2192; gerencia automaticamente","children":[],"payload":{"tag":"li","lines":"68,70"}}],"payload":{"tag":"h2","lines":"64,65"}},{"content":"&#x1f9d1;&#x200d;&#x1f4bb; POO (Programa&#xe7;&#xe3;o Orientada a Objetos)","children":[{"content":"<code>class</code> &#x2192; define classe","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"<code>__init__</code> &#x2192; construtor","children":[],"payload":{"tag":"li","lines":"74,75"}},{"content":"<code>self</code> &#x2192; refer&#xea;ncia ao objeto","children":[],"payload":{"tag":"li","lines":"75,76"}},{"content":"<code>@staticmethod</code> &#x2192; m&#xe9;todo est&#xe1;tico","children":[],"payload":{"tag":"li","lines":"76,77"}},{"content":"<code>@classmethod</code> &#x2192; m&#xe9;todo da classe","children":[],"payload":{"tag":"li","lines":"77,79"}}],"payload":{"tag":"h2","lines":"72,73"}},{"content":"&#x1f9f0; Comandos &#xda;teis","children":[{"content":"<code>help()</code> &#x2192; ajuda","children":[],"payload":{"tag":"li","lines":"82,83"}},{"content":"<code>dir()</code> &#x2192; lista m&#xe9;todos/atributos","children":[],"payload":{"tag":"li","lines":"83,84"}},{"content":"<code>enumerate()</code> &#x2192; &#xed;ndice + valor em loop","children":[],"payload":{"tag":"li","lines":"84,85"}},{"content":"<code>zip()</code> &#x2192; iterar listas juntas","children":[],"payload":{"tag":"li","lines":"85,86"}},{"content":"<code>map()</code> &#x2192; aplica fun&#xe7;&#xe3;o","children":[],"payload":{"tag":"li","lines":"86,87"}},{"content":"<code>filter()</code> &#x2192; filtra valores","children":[],"payload":{"tag":"li","lines":"87,88"}},{"content":"<code>sorted()</code> &#x2192; ordena elementos","children":[],"payload":{"tag":"li","lines":"88,89"}},{"content":"<code>range()</code> &#x2192; gera sequ&#xea;ncia num&#xe9;rica","children":[],"payload":{"tag":"li","lines":"89,90"}}],"payload":{"tag":"h2","lines":"81,82"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
