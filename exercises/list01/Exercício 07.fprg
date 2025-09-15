@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="123"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 11:44:52 "/>
+        <attribute name="created" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMDo1ODoxNiAiOzI0ODU="/>
+        <attribute name="edited" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMTo0NDo1MiAiOzE7MjU4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="serv" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bom dia! Escolha uma op&#231;&#227;o: 1 - Apenas banho 2 - Banho e tosa&quot;" newline="True"/>
+            <input variable="serv"/>
+            <if expression="serv == 2">
+                <then>
+                    <output expression="&quot;Vou leva-lo para a tosa.&quot;" newline="True"/>
+                    <output expression="&quot;Vou leva-lo para o banho.&quot;" newline="True"/>
+                    <output expression="&quot;Agora a secagem para ficar com os pelos sedosos.&quot;" newline="True"/>
+                    <output expression="&quot;Por &#250;ltimo mas n&#227;o menos importante: vamos aplicar o antipulga e deixa-lo impec&#225;vel!&quot;" newline="True"/>
+                    <output expression="&quot;Vamos deixa-lo no canil aguardando o retorno do seu tutor.&quot;" newline="True"/>
+                    <output expression="&quot;Aqui est&#225; o seu melhor amigo(a), agradecemos a prefer&#234;ncia e voltem sempre!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Vou leva-lo para o banho.&quot;" newline="True"/>
+                    <output expression="&quot;Agora a secagem para ficar com os pelos sedosos.&quot;" newline="True"/>
+                    <output expression="&quot;Por &#250;ltimo mas n&#227;o menos importante: vamos aplicar o antipulga e deixa-lo impec&#225;vel!&quot;" newline="True"/>
+                    <output expression="&quot;Vamos deixa-lo no canil aguardando o retorno do seu tutor.&quot;" newline="True"/>
+                    <output expression="&quot;Aqui est&#225; o seu melhor amigo(a), agradecemos a prefer&#234;ncia e voltem sempre!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

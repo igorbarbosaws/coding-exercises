@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="123"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 10:20:54 "/>
+        <attribute name="created" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMDoxMDowMyAiOzI0Njk="/>
+        <attribute name="edited" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMDoyMDo1NCAiOzE7MjU4NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lado1, lado2, lado3, triangulo" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe a medida do primeiro lado do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="lado1"/>
+            <output expression="&quot;Informe a medida do segundo lado do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="lado2"/>
+            <output expression="&quot;Informe a medida do terceiro e &#250;ltimo lado do tri&#226;ngulo&quot;" newline="True"/>
+            <input variable="lado3"/>
+            <assign variable="triangulo" expression="(lado1 + lado2 + lado3) / 3"/>
+            <if expression="triangulo == lado1">
+                <then>
+                    <output expression="&quot;Esse &#233; um triangulo quadrado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O triangulo &#233; is&#243;seles ou escaleno.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

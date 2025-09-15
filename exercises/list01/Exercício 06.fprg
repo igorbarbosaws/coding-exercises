@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="123"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 10:57:36 "/>
+        <attribute name="created" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMDozOToyMCAiOzI0Nzk="/>
+        <attribute name="edited" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMDo1NzozNiAiOzM7MjU5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="av1, av2, proj, freq, media, final" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual a nota da primeira avalia&#231;&#227;o desse aluno?&quot;" newline="True"/>
+            <input variable="av1"/>
+            <output expression="&quot;Qual a nota da segunda avalia&#231;&#227;o desse aluno?&quot;" newline="True"/>
+            <input variable="av2"/>
+            <output expression="&quot;Qual a nota do projeto desenvolvido por esse aluno?&quot;" newline="True"/>
+            <input variable="proj"/>
+            <output expression="&quot;Qual a porcentagem de frequ&#234;ncia desse aluno?&quot;" newline="True"/>
+            <input variable="freq"/>
+            <assign variable="media" expression="(av1 + av2 + proj) / 3"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <if expression="freq &gt;= 75">
+                        <then>
+                            <output expression="&quot;Esse aluno est&#225; aprovado!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Esse aluno est&#225; reprovado!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="media &gt;= 5">
+                        <then>
+                            <output expression="&quot;Esse aluno vai ter que fazer a prova final&quot;" newline="True"/>
+                            <output expression="&quot;Qual a nota da avalia&#231;&#227;o final desse aluno?&quot;" newline="True"/>
+                            <input variable="final"/>
+                            <if expression="final &gt;5">
+                                <then>
+                                    <output expression="&quot;Esse aluno est&#225; aprovado!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Esse aluno est&#225; reprovado!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Esse aluno est&#225; reprovado!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

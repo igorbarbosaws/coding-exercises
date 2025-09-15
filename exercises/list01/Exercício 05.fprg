@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="123"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 10:38:50 "/>
+        <attribute name="created" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMDoyMToyNCAiOzI0NzQ="/>
+        <attribute name="edited" value="MTIzO0RFU0tUT1AtUUVWU01LUzsyMDI1LTA5LTEzOyIxMDozODo1MCAiOzE7MjU4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, exp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira um n&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="exp" expression="num1 % 2"/>
+            <if expression="exp = 1">
+                <then>
+                    <output expression="&quot;Esse &#233; um n&#250;mero &#237;mpar&quot;" newline="True"/>
+                    <if expression="num1 &gt;= 0">
+                        <then>
+                            <output expression="&quot;,e &#233; um n&#250;mero positivo!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;,e &#233; um n&#250;mero negativo ou igual a zero!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Esse &#233; um n&#250;mero par&quot;" newline="True"/>
+                    <if expression="num1 &gt;= 0">
+                        <then>
+                            <output expression="&quot;,e &#233; um n&#250;mero positivo!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;,e &#233; um n&#250;mero negativo ou igual a zero!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
