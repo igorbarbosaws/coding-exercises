@@ -34,4 +34,18 @@ else:
 
 # Ex 03: Criar um algoritmo em Python que receba um mês e informe a estação do ano (verão, primavera, inverno ou outono).
 
+print(f"Alguns preferem o frio, outros o calor ...")
+mes = input("Me informe um mês do ano: ").lower()
+
+match(mes):
+    case "dezembro" | "janeiro" | "fevereiro":
+        print("Calorão! Estamos no verão.")
+    case "março" | "abril" | "maio":
+        print("As folhas caem, o Outono chegou!")
+    case "junho" | "julho" | "agosto":
+        print("Que frio, mas antes o frio do Inverno do que morrer de calor.")
+    case "setembro" | "outubro" | "novembro":
+        print("Quão bela é a primavera!")
+    case _:
+        print("Opção inválida.")
 
