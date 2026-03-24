@@ -30,4 +30,36 @@ print(f"O menor número digitado foi: {menor_numero}")
 
 # Ex 03:
 
+pares = 0
+impares = 0
+
+print("Informe 5 números:")
+
+for i in range(1, 6):
+    num = int(input(f"Informe o {i}º número: "))
+    if num % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+
+print("-" * 30)
+print(f"O total de números pares é: {pares}")
+print(f"O total de números impares é: {impares}")
+
 # Ex 04:
+
+cantores = []
+
+print("Quais os seus 5 cantores favoritos?")
+
+for i in range(1, 6):
+    nome = input(f"Digite o nome do {i}º cantor: ")
+    cantores.append(nome)
+
+cantores.reverse()
+
+print("-" * 30)
+print("Lista dos seus cantores favoritos em ordem invertida:")
+
+for cantor in cantores:
+    print(cantor)
