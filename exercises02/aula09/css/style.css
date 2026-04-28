@@ -1,0 +1,21 @@
+@import url('https://googleapis.com');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(151, 11, 11);
+}
+
+header, header h1, header a, header p {
+    background-color: rgb(0, 0, 0);
+    color:  rgb(151, 11, 11);
+    text-align: center;
+}
+ 
+img {
+    width: 25px;
+    height: auto;
+    margin-left: 0px;
+}

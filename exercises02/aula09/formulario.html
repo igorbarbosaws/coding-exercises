@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Fornulários</title>
+</head>
+<body>
+    <form action="index.html">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="senha">Senha </label>
+        <input type="password" name="senha" id="senha"><br>
+        <label for="msg" >Mensagem: </label>
+        <textarea name="msg" id="msg"></textarea><br>
+        <div>
+            <input type="checkbox" name="anuncio" id="Aceito">
+            <label for="anuncio">Aceito receber anúncios</label>
+        </div>
+        <div>      
+            <input type="checkbox" name="anuncio" id="Recuso">
+            <label for="anuncio">Não aceito receber anúncios</label>
+        </div>
+        <h2>Formas de Contato</h2>
+        <div><input type="radio" name="contato" id="email" value="e-mail">
+            <label for="email">E-mail</label>
+        </div>
+        <div><input type="radio" name="contato" id="zap" value="WhatsApp">
+            <label for="zap">WhatsApp</label>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="submit">Limpar</button>
+
+        <h2>Formulário de Pagamento</h2>
+        <label for="parcelas">Parcelas</label>
+        <form action="">
+            <select name="parcelas" id="parceas">
+                <option value="1x">1x de 120,00</option>
+                <option value="2x">1x de 60,00</option>
+                <option value="3x">1x de 40,00</option>
+                <option value="4x">1x de 30,00</option>
+                <button type="sumbmit">Pagar</button>
+            </select>
+        </form>
+    </form>
+</body>
+</html>
