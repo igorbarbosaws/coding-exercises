@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header, footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+}
+
+section {
+    background: #f4f400;
+}
+
+aside {
+    background: #22aaee;
+}
+
+/* LAYOUT COM FLEXBOX
+main {
+    display: flex;
+}
+
+section {
+    flex: 3;
+    padding: 20px;
+    background: #f4f400;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background: #22aaee;
+} */
+
