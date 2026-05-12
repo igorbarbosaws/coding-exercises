@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style35.css">
     <title>Atividade - Slide 35</title>
 </head>
 <body>
-    
+    <div class="container-formulario">
+        <h1>Cadastro de Usuários</h1>
+
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td style="width: 120px;"><label for="nome">Nome</label></td>
+                    <td colspan="3">
+                        <input type="text" id="nome" name="nome" placeholder="nome do usuário">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="endereco">Endereço</label></td>
+                    <td colspan="3">
+                        <input type="text" id="endereco" name="endereco" placeholder="endereço">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="complemento">Complemento</label></td>
+                    <td>
+                        <input type="text" id="complemento" name="complemento" placeholder="complemento de endereço">
+                    </td>
+                    <td style="width: 60px; text-align: right;"><label for="cidade">Cidade</label></td>
+                    <td>
+                        <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="estado">Estado</label></td>
+                    <td>
+                        <select id="estado" name="estado" class="campo-curto">
+                            <option value="PE">PE</option>
+                            <option value="SP">SP</option>
+                            <option value="RJ">RJ</option>
+                        </select>
+                    </td>
+                    <td style="text-align: right;"><label for="cep">CEP</label></td>
+                    <td>
+                        <input type="text" id="cep" name="cep" placeholder="CEP" class="cep-width">
+                    </td>
+                </tr>
+
+                <tr><td colspan="4">&nbsp;</td></tr>
+
+                <tr>
+                    <td><label for="interesses">Áreas de Interesse</label></td>
+                    <td colspan="3">
+                        <select id="interesses" name="interesses" multiple style="height: 60px;">
+                            <option value="ia">Inteligência Artificial</option>
+                            <option value="dw">Datawarehouse & Dataminning</option>
+                            <option value="redes">Rede de Computadores</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="obs">Observações</label></td>
+                    <td colspan="3">
+                        <textarea id="obs" name="obs" rows="5" placeholder="Texto livre"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
